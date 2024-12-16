@@ -1,22 +1,23 @@
-CREATE TABLE "mytable" (
-  "Client_Num" bigint,
-  "Customer_Age" bigint,
-  "Gender" text,
-  "Dependent_Count" bigint,
-  "Education_Level" text,
-  "Marital_Status" text,
-  "state_cd" text,
-  "Zipcode" bigint,
-  "Car_Owner" text,
-  "House_Owner" text,
-  "Personal_loan" text,
-  "contact" text,
-  "Customer_Job" text,
-  "Income" bigint,
-  "Cust_Satisfaction_Score" bigint
+#sql data for custmer table
+CREATE TABLE custmer (
+  Client_Num bigint,
+  Customer_Age bigint,
+  Gender text,
+  Dependent_Count bigint,
+  Education_Level text,
+  Marital_Status text,
+  state_cd text,
+  Zipcode bigint,
+  Car_Owner text,
+  House_Owner text,
+  Personal_loan text,
+  contact text,
+  Customer_Job text,
+  Income bigint,
+  Cust_Satisfaction_Score bigint
 );
 
-INSERT INTO "mytable" ("Client_Num","Customer_Age","Gender","Dependent_Count","Education_Level","Marital_Status","state_cd","Zipcode","Car_Owner","House_Owner","Personal_loan","contact","Customer_Job","Income","Cust_Satisfaction_Score")
+INSERT INTO custmer (Client_Num, Customer_Age, Gender,Dependent_Count,Education_Level,Marital_Status,state_cd,Zipcode,Car_Owner,House_Owner,Personal_loan,contact,Customer_Job,Income,Cust_Satisfaction_Score)
 VALUES
 (708082083,24,'F',1,'Uneducated','Single','FL',91750,'no','yes','no','unknown','Businessman',202326,3),
 (708083283,62,'F',0,'Unknown','Married','NJ',91750,'no','no','no','cellular','Selfemployeed',5225,2),
