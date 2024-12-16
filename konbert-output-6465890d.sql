@@ -1,25 +1,27 @@
-CREATE TABLE "mytable" (
-  "Client_Num" bigint,
-  "Card_Category" text,
-  "Annual_Fees" bigint,
-  "Activation_30_Days" bigint,
-  "Customer_Acq_Cost" bigint,
-  "Week_Start_Date" text,
-  "Week_Num" text,
-  "Qtr" text,
-  "current_year" bigint,
-  "Credit_Limit" double precision,
-  "Total_Revolving_Bal" bigint,
-  "Total_Trans_Amt" bigint,
-  "Total_Trans_Vol" bigint,
-  "Avg_Utilization_Ratio" double precision,
-  "Use Chip" text,
-  "Exp Type" text,
-  "Interest_Earned" double precision,
-  "Delinquent_Acc" bigint
+#sql code for cc_detail table
+  # first convert the date format in standard date format
+CREATE TABLE cc_detail (
+  Client_Num bigint,
+  Card_Category text,
+  Annual_Fees bigint,
+  Activation_30_Days bigint,
+  Customer_Acq_Cost bigint,
+  Week_Start_Date text,
+  Week_Num text,
+  Qtr text,
+  current_year bigint,
+  Credit_Limit double precision,
+  Total_Revolving_Bal bigint,
+  Total_Trans_Amt bigint,
+  Total_Trans_Vol bigint,
+  Avg_Utilization_Ratio double precision,
+  Use_Chip text,
+  Exp_Type text,
+  Interest_Earned double precision,
+  Delinquent_Acc bigint
 );
 
-INSERT INTO "mytable" ("Client_Num","Card_Category","Annual_Fees","Activation_30_Days","Customer_Acq_Cost","Week_Start_Date","Week_Num","Qtr","current_year","Credit_Limit","Total_Revolving_Bal","Total_Trans_Amt","Total_Trans_Vol","Avg_Utilization_Ratio","Use Chip","Exp Type","Interest_Earned","Delinquent_Acc")
+INSERT INTO cc_detail (Client_Num,Card_Category,Annual_Fees,Activation_30_Days,Customer_Acq_Cost,Week_Start_Date,Week_Num,Qtr,current_year,Credit_Limit,Total_Revolving_Bal,Total_Trans_Amt,Total_Trans_Vol,Avg_Utilization_Ratio,Use_Chip,Exp_Type,Interest_Earned,Delinquent_Acc)
 VALUES
 (708082083,'Blue',200,0,87,'01-01-2023','Week-1','Q1',2023,3544,1661,15149,111,0.469,'Chip','Travel',4393.21,0),
 (708083283,'Blue',445,1,108,'01-01-2023','Week-1','Q1',2023,3421,2517,992,21,0.736,'Swipe','Entertainment',69.44,0),
